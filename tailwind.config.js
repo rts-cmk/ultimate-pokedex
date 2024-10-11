@@ -12,7 +12,13 @@ module.exports = {
         foreground: "white",
         normal: "#AAA67F",
         grass: "#74CB48",
-        poison: "#A43E9E"
+        poison: "#A43E9E",
+        bug: "#A7B723",
+        dark: "#75574C",
+        dragon:"#7037FF",
+        electric: "#F9CF30",
+        fairy:"#E69EAC",
+        fighting:"#C12239"
       },
     },
   },
