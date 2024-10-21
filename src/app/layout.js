@@ -1,5 +1,6 @@
 import Header from "@/components/header"
 import "./globals.css"
+import SearchContextProvider from "@/context/filteredList"
 
 export const metadata = {
   title: "Pokedex",
@@ -8,13 +9,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="bg-background p-2">
-      <Header />
-      <main className="bg-foreground rounded-xl w-full mx-auto p-2 min-h-[80vh]">
-          {children}
+    <SearchContextProvider>
+      <html lang="en">
+        <body className="bg-background p-2 h-[100vh] overflow-y-hidden">
+          <Header />
+          <main className="">
+              {children}
           </main>
-      </body>
-    </html>
+        </body>
+      </html>
+    </SearchContextProvider>
   )
 }

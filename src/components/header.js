@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import Pokeball from "@/images/pokeball.svg"
+import SearchForm from "./searchForm"
 
 export default function Header() {
 	return (
@@ -9,9 +10,7 @@ export default function Header() {
 				<Image src={Pokeball} className="size-8"/>
 				<span className="text-3xl font-bold">Pokédex</span>
 			</Link>
-			<form action="/searchresult" className="flex">		
-				<input type="search" name="search" id="search" placeholder="Search" className="p-3 ps-12 w-full rounded-full text-black custom-shadow-inner" />	
-			</form>
+			<SearchForm />
 		</header>
 	)
 }
